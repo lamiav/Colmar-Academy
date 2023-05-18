@@ -114,8 +114,8 @@ section {
 }
 
 .content {
-    /*border: 1px solid red;*/
-    display: inline-flex;
+   /* border: 1px solid red;*/
+    display: flex;
     width: 100%;
 }
 
@@ -287,4 +287,66 @@ section {
     color: #484848;
     font-size: 18px;
     margin-top: 10px;
+}
+
+/*Courses Section*/
+
+#learn {
+    background-color: #e1e1e1;
+}
+
+#learn .content {
+    flex-direction: column;
+}
+
+#learn h2 {
+    margin: 32px 0;
+    text-align: center;
+    display: block;
+    
+}
+
+.course-content {
+    margin: 0 58px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.course-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+    min-width: 0;
+    margin: 0 16px;
+}
+
+.course-box img {
+    width: 100%;
+    height: auto;
+    /*justify-content: stretch;*/
+    
+}
+
+.course-description {
+    background-color: white;
+    padding: 16px 16px 24px 16px;
+    height: 100%;
+}
+
+.course-description span {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Avenir Next Cyr Light', sans-serif;
+    font-size: 16px;
+    color: #808080;
+    padding: 12px 0;
+}
+
+.course-description p {
+    font-size: 20px;
+    color: #808080;
 }
