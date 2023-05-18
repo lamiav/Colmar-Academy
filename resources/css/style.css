@@ -68,6 +68,7 @@ header .header-content {
     display: flex;
     justify-content: space-between;
     width: 100%;   
+    /*border: 1px solid blue;*/
 }
 
 header .mobile {
@@ -100,11 +101,6 @@ header .mobile {
     color: #484848;
     font-size: 16px;
 }
-/*Header Mobile*/
-
-
-
-
 
 /*Main*/
 /* Section Structure*/
@@ -155,11 +151,6 @@ header .mobile {
     color: #484848;
     display: flex;
     justify-content: center;
-}
-
-#banner .title {
-    max-width: 450px;
-    min-width: 250px;
     /*border: 1px solid blue;*/
 }
 
@@ -238,11 +229,15 @@ header .mobile {
     
 }
 
-.event-box img {
+.event-box .img-desktop {
     width: 35%;
     height: auto;
     display: inline;
     align-self: center;
+}
+
+.event-box .img-mobile {
+    display: none;
 }
 
 .event-box:hover {
@@ -366,7 +361,7 @@ header .mobile {
     display: flex;
 }
 
-.main-content video{
+.main-content video {
     width: 100%;
 }
 
@@ -380,6 +375,13 @@ margin-top: 24px;
     font-size: 20px;
     /*font-family: Arial, sans-serif;*/
     color: #808080;
+}
+
+#thesis .event-box img {
+    width: 35%;
+    height: auto;
+    display: inline;
+    align-self: center;
 }
 
 #thesis .event-description {
@@ -411,3 +413,167 @@ footer li {
     display: inline;
     margin-left: 16px;
 }
+
+footer .separator {
+    height: 0;
+    border-bottom: none;
+}
+
+
+/*Mobile*/
+
+
+@media only screen and (max-width: 780px) {
+
+    /*structure*/
+
+    .supporting-content {
+        width: 100%;
+    }
+
+    h2 {
+        margin: 32px 0 16px 0;
+    }
+
+    /*Header*/
+
+
+    header .desktop, header .logo {
+        display: none;
+    }
+
+
+    header .mobile {
+       display: flex;
+       justify-content: stretch;
+       width: 100%;
+    }
+
+    header .mobile ul {
+        /*border: 1px solid red;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        
+    }
+
+    header .mobile li {
+        display: inline;
+    }
+
+    /*Banner*/
+    .content {
+        flex-direction: column;
+    }
+
+    #banner .main-content {
+        width: 100%;
+        margin: 0 0;
+        
+    }
+
+    #banner .title {
+        /*width: 100%;*/
+        min-width: none;
+        max-width: none;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #banner .button a {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /*Info*/
+
+    #info .main-content {
+        display: none;
+    }
+
+    .event-box {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .event-box .img-desktop {
+        display: none;
+    }
+
+    .event-box .img-mobile {
+        display: block;
+    }
+
+    #info .separator {
+        display: none;
+    }
+
+    .event-description {
+        width: 100%;
+        margin: 40px 0 64px 16px;
+    }
+
+    /*Learn*/
+
+    #learn {
+        background-color: white;
+    }
+
+    #learn h2 {
+        margin: 32px 0 16px 0;
+    }
+
+    .course-content {
+        margin: 0 0 26px 0px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 0 0;
+    }
+
+    .course-box img {
+        display: none;
+    }
+
+    .course-box span, .course-box p {
+        display: none;
+    }
+
+    .course-box {
+        margin-bottom: 8px;
+    }
+
+    .course-description {
+        background-color: #d8d8d8;
+    }
+    /*Thesis*/
+    #thesis .supporting-content, #thesis .quote {
+        display: none;
+    }
+
+    #thesis .main-content {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    #thesis .thesis-content {
+        margin-bottom: 24px;
+    }
+
+    /*Footer*/
+
+    footer .footer-content {
+       padding: 16px 16px;
+       margin: 0;
+     }
+
+    footer .separator {
+        display: none;
+    }
+    
+}
+
+
