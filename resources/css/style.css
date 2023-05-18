@@ -109,10 +109,6 @@ header .mobile {
 /*Main*/
 /* Section Structure*/
 
-section {
-    /*border: 1px solid purple;*/
-}
-
 .content {
    /* border: 1px solid red;*/
     display: flex;
@@ -218,7 +214,6 @@ section {
 .quote p {
     margin: 24px 0;
     font-size: 20px;
-    color: ;
 }
 
 #info .supporting-content {
@@ -303,7 +298,6 @@ section {
     margin: 32px 0;
     text-align: center;
     display: block;
-    
 }
 
 .course-content {
@@ -349,4 +343,71 @@ section {
 .course-description p {
     font-size: 20px;
     color: #808080;
+}
+
+/*Thesis Section*/
+
+#thesis {
+    background-color: #f5f5f5;
+    
+}
+
+#thesis .content {
+    flex-direction: column;
+}
+
+#thesis h2 {
+    margin-top: 32px;
+    text-align: center;
+    display: block;
+}
+
+.thesis-content {
+    display: flex;
+}
+
+.main-content video{
+    width: 100%;
+}
+
+#thesis .quote {
+margin-top: 24px;
+
+}
+#thesis .quote p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 20px;
+    /*font-family: Arial, sans-serif;*/
+    color: #808080;
+}
+
+#thesis .event-description {
+    color: #808080;
+}
+
+/*Footer*/
+
+footer {
+    position: relative;
+    top: 64px;
+    background-color: #f5f5f5;  
+    height: 80px;
+}
+
+footer .footer-content {
+   margin: 16px 24px; 
+   display: flex;
+   justify-content: space-between;
+}
+
+footer p, footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #808080;
+    font-size: 14px;
+} 
+
+footer li {
+    display: inline;
+    margin-left: 16px;
 }
